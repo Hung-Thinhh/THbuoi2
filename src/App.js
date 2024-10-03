@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { Hello, HelloPerson } from './hello'
+import { Header } from './Header'
+import HelloBtn from './HelloBtn'
+import Car from "./Car"
+import Login from "./Login"
+import Routee from "./Route"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Hello/>
+      <HelloPerson name='Nguyễn Hưng Thịnh' />
+      <Header />
+      {/* <HelloBtn/>
+      <h1>jajajaja</h1>
+      <Car />  
+      <Login /> */}
+      <Routee/>
     </div>
   );
 }
+
 
 export default App;
