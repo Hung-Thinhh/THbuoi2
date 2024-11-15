@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  .nav-header{
+    .bg-body-tertiary{
+
+      background-color: #232730!important;
+      .logo-name{
+        color: #149eca!important;
+        img{
+          animation: rotate infinite 10s linear;
+        }
+        @keyframes rotate{
+
+          100%{
+            transform:rotate(360deg);
+          }
+        }
+      }
+      a{
+        color: #ebecf0!important;
+        &:hover{
+          color: #149eca!important;
+        }
+        &.active{
+          color: #149eca!important;
+
+        }
+      }
+      .dropdown-menu{
+        .dropdown-divider{
+          margin: 0;
+        }
+        a{
+          color: #000!important;
+          &.nav-link{
+          padding: 0;
+            
+          }
+        }
+       
+        a:hover{
+          color: #149eca!important;
+        }
+      }
+      .name-user{
+        color: #ebecf0!important;
+      }
+
+    }
+  }
+  

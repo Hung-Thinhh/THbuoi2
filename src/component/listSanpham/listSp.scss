@@ -1,0 +1,33 @@
+.listsp_container{
+    .listsp_container_wrap{
+        display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    .list_item{
+        width: 25%;
+        .list_item_ctn{
+            padding: 1rem;
+            .item_img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .item_conten{
+                padding: 20px 10px;
+                .item_name{
+                    color: #1b1b1b;
+                    font-size: 20px;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(95, 95, 173);
+                    }
+                }
+                .item_price{
+                    color: #333;
+                }
+            }
+        }
+    }
+    }
+}

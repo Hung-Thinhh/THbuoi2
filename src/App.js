@@ -1,26 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
-import { Hello, HelloPerson } from './hello'
-import { Header } from './Header'
-import HelloBtn from './HelloBtn'
-import Car from "./Car"
-import Login from "./Login"
-import Routee from "./Route"
+import "./App.scss";
+import NavHeader from "./component/navigation/navheader";
+import { BrowserRouter as Router } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import { useState, useEffect, useContext } from "react";
+import _ from "lodash";
+import "react-toastify/dist/ReactToastify.css";
+import AppRoutes from "../src/router/AppRoutes";
+import { UserContext } from "./context/UserContext";
+import { Rings } from 'react-loader-spinner'
 function App() {
+  const { user } = useContext(UserContext);
   return (
-    <div className="App">
-
-      <Hello/>
-      <HelloPerson name='Nguyễn Hưng Thịnh' />
-      <Header />
-      {/* <HelloBtn/>
-      <h1>jajajaja</h1>
-      <Car />  
-      <Login /> */}
-      <Routee/>
-    </div>
+    <>
+      <Router>
+        {user && user.isLoading ? (
+          <Rings
+          visible={true}
+          height="80"
+          width="80"
+          color="#4fa94d"
+          ariaLabel="rings-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+          />
+        ) : (
+          <>
+            <div className="app-header">
+              <NavHeader />
+            </div>
+            <div className="app-container">
+              <AppRoutes />
+            </div>
+          </>
+        )}
+      </Router>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+    </>
   );
 }
-
 
 export default App;

@@ -1,0 +1,59 @@
+.home-container {
+    .home_wrap_img {
+        background-image: url(https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/09/hero-section-bg.jpg);
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 92vh;
+        .e-con.e-flex>.e-con-inner {
+            flex-wrap: initial;
+            justify-content: initial;
+            align-items: stretch;
+            align-content: initial;
+            flex-basis: auto;
+            flex-grow: 1;
+            flex-shrink: 1;
+            align-self: auto;
+
+            .e-con.e-con>.e-con-inner>.elementor-widget,
+            .elementor.elementor .e-con>.elementor-widget {
+                max-width: 100%;
+                text-align: center;
+
+                h6 {
+                    .elementor-25 .elementor-element.elementor-element-b80d2c0 .elementor-heading-title {
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        line-height: 1.25em;
+                    }
+                }
+            }
+        }
+    }
+}
+ .elementor-element.elementor-element-453e66a {
+    text-align: center;
+}
+.elementor-element.elementor-element-453e66a .elementor-heading-title {
+    color: #000;
+}
+h1, .entry-content h1 {
+    font-size: 72px;
+    font-size: 4.5rem;
+    font-weight: normal;
+    font-family: 'Unna', serif;
+    line-height: 1.4em;
+}
+.elementor-element.elementor-element-b80d2c0 .elementor-heading-title {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.elementor-element.elementor-element-b80d2c0 {
+    text-align: center;
+}
+.elementor-element.elementor-element-a90d818.e-con-full.e-flex.e-con.e-child{
+    padding: 100px;
+    text-align: center;
+}

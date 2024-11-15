@@ -1,0 +1,132 @@
+.profile {
+.login-container{
+    .row{
+        margin: 30px;
+        h3{
+            margin: 20px 0;
+        }
+    }
+    .content-right{
+
+        margin: 0;
+    }
+}
+    .avt_main {
+        width: 15rem;
+        margin: 100px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        border-radius: 50%;
+        padding: 0 !important;
+
+
+        .avt-container {
+            width: 100%;
+            height: 15rem;
+            top: 50px;
+            border: 1px solid var(--text-1);
+
+            &:hover .avt_group {
+                display: block;
+            }
+
+            .avt-img {
+                width: 15rem;
+                object-fit: cover;
+                z-index: 1;
+                position: absolute;
+
+
+            }
+
+            .avt_group {
+                position: absolute;
+                width: 15rem;
+                height: 15rem;
+                background: rgb(0, 0, 0);
+                opacity: .7;
+                z-index: 3;
+                display: none;
+
+                svg {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    color: #fff;
+                    font-size: 35px;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+
+    .profile_main {
+        width: 60%;
+        .input_row{
+            display: flex;
+            gap: 20px;
+            .form-group{
+                width: 50%;
+            }
+        }
+        .form-group{
+            margin: 10px 0;
+        }
+        .form-check{
+            margin-top: 15px;
+             label {
+                display: flex;
+                cursor: pointer;
+                font-weight: 500;
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 0.375em;
+              }
+              
+                label input {
+                position: absolute;
+                left: -9999px;
+              }
+              
+               label input:checked + span {
+                background-color: #468df9;
+                color: white;
+              }
+              
+               label input:checked + span:before {
+                box-shadow: inset 0 0 0 0.4375em #1973f9;
+              }
+              
+               label span {
+                display: flex;
+                align-items: center;
+                padding: 0.375em 0.75em 0.375em 0.375em;
+                border-radius: 99em;
+                transition: 0.25s ease;
+                color: #414181;
+                width: 100px;
+              }
+              
+               label span:hover {
+                background-color: #d6d6e5;
+              }
+              
+               label span:before {
+                display: flex;
+                flex-shrink: 0;
+                content: "";
+                background-color: #fff;
+                width: 1.5em;
+                height: 1.5em;
+                border-radius: 50%;
+                margin-right: 0.375em;
+                transition: 0.25s ease;
+                box-shadow: inset 0 0 0 0.125em #00005c;
+              }
+        }
+    }
+}

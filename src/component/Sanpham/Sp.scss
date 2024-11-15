@@ -1,0 +1,35 @@
+.sp_container{
+    .listsp_container_wrap{
+    .list_item{
+        .list_item_ctn{
+            padding: 3rem;
+            display: flex;
+            .item_img{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                img{
+                    width:70%;
+                    height: 500px;
+                    object-fit: cover;
+                }
+            }
+            .item_conten{
+                padding: 20px 10px;
+                .item_name{
+                    color: #1b1b1b;
+                    font-size: 40px;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(95, 95, 173);
+                    }
+                }
+                .item_price{
+                    font-size: 25px;
+                    color: #333;
+                }
+            }
+        }
+    }
+    }
+}

@@ -1,0 +1,29 @@
+.login-container{
+    min-height: 100vh;
+    display: flex;
+    background-color: #f0f2f5;
+    .row{
+        display: flex;
+        align-items: center;
+        margin-top: 20%;
+        .brand{
+            font-size: 50px;
+            font-weight: bold;
+            color: #0d6fff;
+            text-transform: uppercase;
+        }
+    }
+    .content-right{
+        box-shadow: 0px 1px 6px #000;
+        border-radius: 10px;
+    }
+    .form-group {
+        position: relative;
+
+        svg {
+            position: absolute;
+            top: 60%;
+            right: 15px
+        }
+    }
+}
